@@ -1,3 +1,12 @@
+<?php 
+session_start();
+if(isset($_SESSION['login'])){
+  $_SESSION['login'];
+} else {
+  header('location: /Commandes');
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,13 +34,10 @@
   <div class="row">
   <div class="offset-md-2">
   <p>
-  Bonjour M. ... et bienvenue sur la plateforme de Sunu Commande.
+  <span class="alert alert-success">Identifiant Connexion:</span> <?php echo $_SESSION['login']; ?> 
   </p>
   </div>
   </div> 
   </div>
-  <footer class="foot">
-  <?php include('./footer.php'); ?>
-  </footer>
 </body>
 </html>

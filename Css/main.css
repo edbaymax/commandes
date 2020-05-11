@@ -2,11 +2,8 @@
   background-color: lightgray;
 }
 .foot{
-  position: relative;
-  bottom: 0;
-  right:0;
-  left:0;
-  padding: 20px;;
-  background-color: black;
-  color: white;
+}
+.login-form{
+  background-color: red;
+
 }

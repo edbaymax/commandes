@@ -9,6 +9,7 @@
   <script src="../JS/jquery.js"></script>
   <script src="../bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../JS/representant.js"></script>
 </head>
 <body>
   <div class="container-fluide">
@@ -35,38 +36,19 @@
 <div class="row justify-content-md-center">
   <fieldset>
   <legend>Ajouter un représentant</legend>
-  <form action="" method="post">
-    <input type="text" class="form-control" name="nomRepresentant" placeholder="Nom de Représentant"/><br><br>
-    <button type="submit" class="btn btn-success float-right">Enregistrer</button>
-  </form>
+    <input required type="text" class="form-control" id="nomRepresentant" name="nomRepresentant" placeholder="Nom de Représentant"/><br><br>
+    <input required type="text" class="form-control" id="codeRepresentant" name="codeRepresentant" placeholder="Code de Représentant"/><br><br>
+    <button id="saveRep" class="btn btn-success float-right">Enregistrer</button>
   </fieldset>
 </div> <hr>
 <br><br>
 <div class="row">
   <div class="offset-md-1 col-md-11">
-  <table class="table">
-  <thead>
-  <tr>
-  <th scope="col">Identifiant Représentant</th>
-  <th scope="col">Nom Représentant</th>
-  <th scope=""></th>
-  <th scope=""></th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td></td>
-  <td></td>
-  <td><a href="#"><button class="btn btn-primary">Modifier</button></a></td>
-  <td><a href="#"><button class="btn btn-danger">Supprimer</button></a></td>
-  </tr>
-  </tbody>
-  </table>
+  <div id="tableRep">
+
+  </div>
   </div>
 </div>
   </div>
-  <footer class="foot">
-  <?php include('./footer.php'); ?>
-  </footer>
 </body>
 </html>

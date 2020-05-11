@@ -17,6 +17,6 @@
 </div>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="#">Déconnexion</a>
+<a class="nav-link" href="/Commandes/Contents/disconnect.php">Déconnexion</a>
 </li>
 </ul>

@@ -9,10 +9,11 @@
   <script src="../JS/jquery.js"></script>
   <script src="../bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="../JS/reglement.js"></script>
+  <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
+  <script src="../JS/commandes.js"></script>
 </head>
 <body>
-  <div class="container-fluide">
+  <div id="container" class="container-fluide">
   <br><br>
   <div class="row">
   <div class="offset-md-3"></div>
@@ -36,35 +37,18 @@
 <div class="row justify-content-md-center">
   <fieldset>
   <legend>Saisir Commande</legend>
-  <form action="" method="post">
-    <select type="text" class="form-control" id="ncmd">
-      <option value="Client">Cmd</option>
-    </select><br><br> 
-  </form>
+  <div class="row">
+  <div id="rep"></div><button id="search" class="btn btn-success">Search</button><button onClick="print()" class="btn btn-primary">Imprimer</button>
+  </div>
+    <br><br> 
   </fieldset>
 </div> <hr>
 <br><br>
 <div class="row">
   <div class="offset-md-1 col-md-11">
-  <table class="table">
-  <thead>
-  <tr>
-  <th scope="col">Numéro</th>
-  <th scope="col">Montant</th>
-  <th scope="col">Date de règlement</th>
-  <th scope=""></th>
-  <th scope=""></th>
-  </tr>
-  </thead>
-  <tbody id="reglement">
-  </tbody>
-  </table>
-  <label>Montant règlement:</label>
+  <div id="tableC"></div>
   </div>
 </div>
   </div>
-  <footer class="foot">
-  <?php include('./footer.php'); ?>
-  </footer>
 </body>
 </html>

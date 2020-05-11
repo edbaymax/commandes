@@ -9,6 +9,7 @@
   <script src="../JS/jquery.js"></script>
   <script src="../bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../JS/produit.js"></script>
 </head>
 <body>
   <div class="container-fluide">
@@ -35,41 +36,20 @@
 <div class="row justify-content-md-center">
   <fieldset>
   <legend>Ajouter un Produit</legend>
-  <form action="" method="post">
-    <input type="text" class="form-control" name="designation" placeholder="Désignation"/><br><br>
-    <input type="text" class="form-control" name="prixUnitaire" placeholder="Prix Unitaire"><br><br>
-    <button type="submit" class="btn btn-success float-right">Enregistrer</button>
-  </form>
+  <input type="text" id="codeProduit" class="form-control" name="designation" placeholder="Code Produit"/><br><br>
+    <input type="text" id="designation" class="form-control" name="designation" placeholder="Désignation"/><br><br>
+    <input type="text" id="prixUnitaire" class="form-control" name="prixUnitaire" placeholder="Prix Unitaire"><br><br>
+    <button id="saveRep" class="btn btn-success float-right">Enregistrer</button>
   </fieldset>
 </div> <hr>
 <br><br>
 <div class="row">
   <div class="offset-md-1 col-md-11">
-  <table class="table">
-  <thead>
-  <tr>
-  <th scope="col">Code Produit</th>
-  <th scope="col">Désignation</th>
-  <th scope="col">Prix Unitaire</th>
-  <th scope=""></th>
-  <th scope=""></th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td><a href="#"><button class="btn btn-primary">Modifier</button></a></td>
-  <td><a href="#"><button class="btn btn-danger">Supprimer</button></a></td>
-  </tr>
-  </tbody>
-  </table>
+  <div id="tableRep">
+
+  </div>
   </div>
 </div>
   </div>
 </body>
-<footer class="foot">
-  <?php include('./footer.php'); ?>
-  </footer>
 </html>

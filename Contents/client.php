@@ -9,6 +9,7 @@
   <script src="../JS/jquery.js"></script>
   <script src="../bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../JS/client.js"></script>
 </head>
 <body>
   <div class="container-fluide">
@@ -35,43 +36,20 @@
 <div class="row justify-content-md-center">
   <fieldset>
   <legend>Ajouter un Client</legend>
-  <form action="" method="post">
-    <input type="text" class="form-control" name="nomClient" placeholder="Nom de Client"/><br><br>
-    <select name="codeRepresentant" class="form-control" id="">
-    <option value="none">None</option>
-    </select><br><br>
-    <button type="submit" class="btn btn-success float-right">Enregistrer</button>
-  </form>
+  <input type="text" class="form-control" id="codeClient" name="codeClient" placeholder="Code Client"/><br><br>
+    <input type="text" class="form-control" id="nomClient"  name="nomClient" placeholder="Nom de Client"/><br><br>
+    <div id="rep"></div><br><br>
+    <button id="saveRep" class="btn btn-success float-right">Enregistrer</button>
   </fieldset>
 </div> <hr>
 <br><br>
 <div class="row">
   <div class="offset-md-1 col-md-11">
-  <table class="table">
-  <thead>
-  <tr>
-  <th scope="col">Identifiant Client</th>
-  <th scope="col">Nom Client</th>
-  <th scope="col">Identifiant Représentant</th>
-  <th scope=""></th>
-  <th scope=""></th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td><a href="#"><button class="btn btn-primary">Modifier</button></a></td>
-  <td><a href="#"><button class="btn btn-danger">Supprimer</button></a></td>
-  </tr>
-  </tbody>
-  </table>
+  <div id="tableRep">
+  </div>
   </div>
 </div>
   </div>
 </body>
-<footer class="foot">
-  <?php include('./footer.php'); ?>
-  </footer>
+
 </html>
